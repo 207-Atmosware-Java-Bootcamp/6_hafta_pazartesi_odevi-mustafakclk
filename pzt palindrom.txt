@@ -1,0 +1,23 @@
+package haftasonualistirma;
+
+import java.util.Scanner;
+
+public class pztodev {
+	
+static	Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		String kelime = "" ;
+		System.out.println("Lütfen kelimenizi giriniz");
+		String input = sc.nextLine();
+		for(int i = input.length()-1; i>=0; i--) {
+			kelime += input.charAt(i);
+		}
+		boolean tersten = kelime.equals(input);
+		System.out.println(tersten ? "palindromdur" : "palindrom degildir.");
+		
+		}
+	}
+
+
+
